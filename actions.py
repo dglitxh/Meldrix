@@ -55,31 +55,13 @@ def identity():
      'In different cities, get top headline news from times of india and you can ask me computational or geographical questions too!')
 
 def weather():
-    api_key="Apply your unique ID"
-    base_url="https://api.openweathermap.org/data/2.5/weather?"
-    speak("for what city?")
-    city_name=takeCommand()
-    complete_url=base_url+"appid="+api_key+"&q="+city_name
-    response = requests.get(complete_url)
-    x=response.json()
-    if x["cod"]!="404":
-        y=x["main"]
-        current_temperature = y["temp"]
-        current_humidiy = y["humidity"]
-        z = x["weather"]
-        weather_description = z[0]["description"]
-        speak(" Temperature in kelvin unit is " +
-            str(current_temperature) +
-            "\n humidity in percentage is " +
-            str(current_humidiy) +
-            "\n description  " +
-            str(weather_description))
-        print(" Temperature in kelvin unit = " +
-            str(current_temperature) +
-            "\n humidity (in percentage) = " +
-            str(current_humidiy) +
-            "\n description = " +
-            str(weather_description))
+    city = "Accra"
+    res = requests.get(
+        f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=16f0afad2fd9e18b7aee9582e8ce650b&units=metric").json()
+    temp1 = res["weather"][0]["description"]
+    temp2 = res["main"]["temp"]
+    speak(
+        f"Temperature is {format(temp2)} degree Celsius \nWeather is {format(temp1)}")
 
 def logout():
     speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
@@ -89,7 +71,7 @@ def creator():
     speak(f"I was built by {user}")
     print(f"I was built by {user}")
 
-def sendWhatMsg():
+def Whatsapp():
     user_name = {
         f'{user}': '+233 270845518'
     }
