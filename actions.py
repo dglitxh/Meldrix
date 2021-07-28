@@ -72,18 +72,13 @@ def creator():
     print(f"I was built by {user}")
 
 def Whatsapp():
-    user_name = {
-        f'{user}': '+233 270845518'
-    }
-    try:
-        speak("To whom you want to send the message?")
-        name = takeCommand()
-        speak("What is the message")
-        webbrowser.open("https://web.whatsapp.com/send?phone=" +
-                user_name[name]+'&text='+takeCommand())
-        time.sleep(6)
-        pyautogui.press('enter')
-        speak("Message sent")
-    except Exception as e:
-        print(e)
-        speak("Unable to send the Message")
+    speak("Who do you intend sendint this message?")
+    name = takeCommand()
+    speak("What is the message")
+    # webbrowser.open_new_tab("https://web.whatsapp.com/send?phone=" +
+    #         user_name[name]+'&text='+takeCommand())
+    webbrowser.open_new_tab(f'https://web.whatsapp.com/send?phone={name}&text={takeCommand()}')
+    # time.sleep(6)
+    pyautogui.press('enter')
+    speak("Message sent")
+    

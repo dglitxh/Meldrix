@@ -13,7 +13,7 @@ import pyautogui
 import requests
 
 
-user = "YD"
+user = "acida"
 ai = "Meldrix"
 
 engine=pyttsx3.init()
@@ -28,16 +28,16 @@ def speak(text):
 def Greetings():
     hour=datetime.datetime.now().hour
     if hour>=0 and hour<12:
-        speak(f"Good Morning")
-        print("Good Morning")
+        speak(f"Good Morning, {user}")
+        print(f"Good Morning", {user})
     elif hour>=12 and hour<18:
-        speak("Good Afternoon")
-        print("Good Afternoon")
+        speak(f"Good Afternoon, {user}")
+        print(f"Good Afternoon, {user}")
     else:
-        speak("Good Evening")
-        print("Good Evening")
-    print(f"Loading your AI personal assistant {ai}")
-    speak(f"Hello, i am {ai}, your smart assistant")
+        speak(f"Good Evening, {user}")
+        print(f"Good Evening, {user}")
+print(f"Loading your AI personal assistant {ai}")
+speak(f"Hello, i am {ai}, your smart assistant")
 
 def takeCommand():
     r=sr.Recognizer()
@@ -50,7 +50,7 @@ def takeCommand():
             print(f"user said:{statement}\n")
 
         except Exception as e:
-            speak("oops looks like there was an error")
+            speak("oops!!! looks like there was an error")
             print(e)
             return "None"
         return statement

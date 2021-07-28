@@ -5,12 +5,12 @@ def commands():
     count = 0
     while True:
             if count > 0:
-                speak("Is there anything else i can help with YD?")
+                speak(f"Is there anything else i can help with {user}?")
                 statement = takeCommand().lower()
                 if statement==0:
                     continue
             elif count == 0:
-                speak("how may i help you?YD.")
+                speak("how may i assist you?.")
                 statement = takeCommand().lower()
                 if statement==0:
                     continue
@@ -57,8 +57,11 @@ def commands():
 
             elif "log off" in statement or "sign out" in statement:
                 logout()
-            elif "send" or "whatsapp" in statement:
+
+            elif "whatsapp" in statement:
                 Whatsapp()
 
+      
             count += 1            
-    time.sleep(3)
+            
+            time.sleep(3)
