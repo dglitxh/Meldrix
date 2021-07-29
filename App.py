@@ -9,6 +9,7 @@ def commands():
                 statement = takeCommand().lower()
                 if statement==0:
                     continue
+                
             elif count == 0:
                 speak("how may i assist you?.")
                 statement = takeCommand().lower()
@@ -49,7 +50,6 @@ def commands():
             elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
                 creator()
 
-
             elif "weather" in statement:
                 weather()
 
@@ -63,3 +63,8 @@ def commands():
             count += 1            
             
             time.sleep(3)
+
+if __name__=='__main__':
+    commands()
+			
+time.sleep(3)
