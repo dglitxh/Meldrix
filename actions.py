@@ -49,9 +49,7 @@ def wolfram():
     print(answer)
 
 def identity():
-    speak('I am {ai} version 1.O your personal assistant. I am programmed to minor tasks like'
-            'opening youtube,google chrome, gmail and stackoverflow ,predict time,take a photo,search wikipedia,predict weather' 
-     'In different cities, get top headline news from times of india and you can ask me computational or geographical questions too!')
+    speak('I am {ai}, your smart assistant. I am here to make life easier. I can perform numerous tasks; just say the word and it\'s done')
 
 def weather():
     city = "Accra"
