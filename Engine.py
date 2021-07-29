@@ -13,7 +13,7 @@ import pyautogui
 import requests
 
 
-user = "acida"
+user = "YD"
 ai = "Meldrix"
 
 engine=pyttsx3.init()
@@ -44,17 +44,13 @@ def takeCommand():
     with sr.Microphone() as source:
         print("I am Listening...")
         audio=r.listen(source)
-
         try:
             statement=r.recognize_google(audio,language='en-in')
             print(f"user said:{statement}\n")
-
         except Exception as e:
             speak("oops!!! looks like there was an error")
             print(e)
             return "None"
         return statement
-
-
 Greetings()
 

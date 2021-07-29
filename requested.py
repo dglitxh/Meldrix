@@ -15,8 +15,6 @@ def commands():
                 if statement==0:
                     continue
 
-
-
             if "good bye" in statement or "ok bye" in statement or "stop" in statement:
                 goodbyes()
 
