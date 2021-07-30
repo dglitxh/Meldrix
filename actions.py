@@ -15,7 +15,7 @@ def wiki():
 
 def youtube():
     webbrowser.open_new_tab("https://www.youtube.com")
-    speak("youtube is open now")
+    speak("youtube is now opened. enjoy")
     time.sleep(5)
 
 def google():
@@ -38,7 +38,7 @@ def search():
     time.sleep(5)
 
 def wolfram():
-    speak('I can answer to computational and geographical questions  and what question do you want to ask now')
+    speak('You can ask computational and geographical questions and get your answers in split seconds')
     question=takeCommand()
     app_id="E8H76X-T8V8UHPUY2"
     client = wolframalpha.Client(app_id)

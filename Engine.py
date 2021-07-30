@@ -37,7 +37,7 @@ def Greetings():
         speak(f"Good Evening, {user}")
         print(f"Good Evening, {user}")
 print(f"Loading your AI personal assistant {ai}")
-speak(f"Hello, i am {ai}, your smart assistant")
+speak(f"Hello, i am {ai}, your smart assistant, and i am here to help.")
 
 def takeCommand():
     r=sr.Recognizer()
