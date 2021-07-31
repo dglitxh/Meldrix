@@ -34,8 +34,8 @@ def commands():
             elif 'news' in statement:
                 news()
 
-            # elif "camera" in statement or "take a photo" in statement:
-            #     ec.capture(0,"robo camera","img.jpg")
+            elif "camera" in statement or "take a photo" in statement:
+                ec.capture(0,"robo camera","img.jpg")
 
             
             elif 'search'  in statement:
@@ -68,3 +68,4 @@ if __name__=='__main__':
     commands()
 			
 time.sleep(3)
+

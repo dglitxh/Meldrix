@@ -6,7 +6,7 @@ import webbrowser
 import os
 import time
 import subprocess
-# from ecapture import ecapture as ec
+from ecapture import ecapture as ec
 import wolframalpha
 import json
 import pyautogui
@@ -49,6 +49,7 @@ def takeCommand():
             print(f"user said:{statement}\n")
         except Exception as e:
             speak("oops!!! looks like there was an error")
+            speak("can you repeat what you said, please")
             print(e)
             return "None"
         return statement
