@@ -20,7 +20,7 @@ def youtube():
 
 def google():
     webbrowser.open_new_tab("https://www.google.com")
-    speak("Google chrome is open now")
+    speak("Google chrome is opened")
     time.sleep(5)
 
 def clock():
@@ -61,7 +61,7 @@ def weather():
         f"Temperature is {format(temp2)} degree Celsius \nWeather is {format(temp1)}")
 
 def logout():
-    speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
+    speak("Ok , your pc will log off in 10 seconds make sure you exit from all applications")
     subprocess.call(["shutdown", "/l"])
 
 def creator():
@@ -69,13 +69,11 @@ def creator():
     print(f"I was built by {user}")
 
 def Whatsapp():
-    speak("Who do you intend sendint this message?")
+    speak("Who do you intend sending this message?")
     name = takeCommand()
     speak("What is the message")
-    # webbrowser.open_new_tab("https://web.whatsapp.com/send?phone=" +
-    #         user_name[name]+'&text='+takeCommand())
     webbrowser.open_new_tab(f'https://web.whatsapp.com/send?phone={name}&text={takeCommand()}')
-    # time.sleep(6)
+    time.sleep(6)
     pyautogui.press('enter')
     speak("Message sent")
-    
+     
