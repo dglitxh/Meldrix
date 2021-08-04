@@ -11,6 +11,7 @@ import wolframalpha
 import json
 import pyautogui
 import requests
+import random
 
 
 user = "YD"

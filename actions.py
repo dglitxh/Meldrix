@@ -49,7 +49,10 @@ def wolfram():
     print(answer)
 
 def identity():
-    speak('I am {ai}, your smart assistant. I am here to make life easier. I can perform numerous tasks; just say the word and it\'s done')
+    replies = [f"I am {ai}, your smart assistant. I am here to make life easier.",
+     f"i am {ai}, i think i have told you before", 
+     f"You ask that so many times, i am {ai}"]
+    speak(random.choice(replies))
 
 def weather():
     city = "Accra"
