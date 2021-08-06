@@ -54,7 +54,7 @@ def commands():
         elif "log off" in statement or "sign out" in statement:
             logout()
             
-        elif "whatsapp" in statement:
+        elif "whatsapp" in statement or "send message" in statement:
             Whatsapp()
     
         count += 1            
