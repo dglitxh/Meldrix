@@ -15,12 +15,12 @@ def wiki():
 
 def youtube():
     webbrowser.open_new_tab("https://www.youtube.com")
-    speak("youtube is now opened. enjoy")
+    speak("youtube is now opened. Happy streaming")
     time.sleep(5)
 
 def google():
     webbrowser.open_new_tab("https://www.google.com")
-    speak("Google chrome is opened")
+    speak("Google chrome is opened. Happy surfing")
     time.sleep(5)
 
 def clock():
@@ -50,8 +50,7 @@ def wolfram():
 
 def identity():
     replies = [f"I am {ai}, your smart assistant. I am here to make life easier.",
-     f"i am {ai}, i think i have told you before", 
-     f"You ask that so many times, i am {ai}"]
+     f"i am {ai}, i think i have told you before", ]
     speak(random.choice(replies))
 
 def weather():
