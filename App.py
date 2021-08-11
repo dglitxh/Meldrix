@@ -39,7 +39,7 @@ def commands():
         elif 'search'  in statement:
             search()	
 
-        elif 'ask' in statement:
+        elif 'ask' in statement "question":
             wolfram()
 
         elif 'who are you' in statement or 'what can you do' in statement:
