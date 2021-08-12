@@ -45,7 +45,7 @@ def commands():
         elif 'who are you' in statement or 'what can you do' in statement:
             identity()
 
-        elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
+        elif "who made you" in statement or "who created you" in statement :
             creator()
 
         elif "weather" in statement:
