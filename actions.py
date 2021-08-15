@@ -71,7 +71,7 @@ def creator():
     print(f"I was built by {user}")
 
 def Whatsapp():
-    speak("Who do you intend sending this message?")
+    speak("to whom do you intend sending this message?")
     name = takeCommand()
     speak("What is the message")
     webbrowser.open_new_tab(f'https://web.whatsapp.com/send?phone={name}&text={takeCommand()}')

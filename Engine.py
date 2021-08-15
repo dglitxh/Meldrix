@@ -50,7 +50,7 @@ def takeCommand():
             print(f"user said:{statement}\n")
         except Exception as e:
             speak("oops!!! I can't hear you")
-            speak("can you repeat what you said, please")
+            speak("can you repeat what you just said, please")
             print(e)
             return "None"
         return statement
