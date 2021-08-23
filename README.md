@@ -1,3 +1,3 @@
 # Meldrix
-A virtual AI assistant
-Performs basic tasks with voice commands
+A voice controlled virtual AI assistant
+Performs basic tasks
