@@ -1,3 +1,3 @@
 # Meldrix
-A voice controlled virtual AI assistant
+A voice controlled virtual assistant
 
